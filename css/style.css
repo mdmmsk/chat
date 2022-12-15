@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chat {
+  position: relative;
+  border: 1px solid #000;
+  max-width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.chat__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  min-height: 437px;
+  max-height: 437px;
+  border: 1px solid #000;
+  padding: 4px 8px;
+  margin-top: 7px;
+}
+
+.chat__display::-webkit-scrollbar {
+  width: 0;
+}
+
+.chat__submit {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-width: 304px;
+  margin: 6px auto;
+}
+
+.btn {
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.btn a span {
+  display: block;
+  padding: 5px 8px;
+  color: #000;
+}
+
+.display__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.firstmess {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.firstmess .message__items {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mymess {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.message__items {
+  background-color: #E5E5E5;
+  padding: 8px 8px 28px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 286px;
+}
+
+.message__text {
+  display: inline;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.message__time {
+  display: inline;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  margin: auto 0px 0px auto;
+}
+
+.submit__input {
+  border: 1px solid #000;
+  max-width: 267px;
+  min-width: 267px;
+  min-height: 32px;
+}
+
+.submit__input input {
+  min-width: 260px;
+  margin: 8px auto auto 5px;
+}
+
+.submit__input input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.submit__input input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.submit__input input::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.submit__input input::placeholder {
+  font-size: 16px;
+}
+
+.submit__btn {
+  display: block;
+  max-width: 29px;
+  min-width: 29px;
+  min-height: 32px;
+  border: 1px solid #000;
+}
+
+.submit__btn span {
+  display: block;
+  margin: 5px auto auto 7px;
+}
+
+.chat__popups {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 528px;
+  background-color: #535353;
+}
+
+.chat__settings {
+  display: none;
+}
+
+.chat__body {
+  max-width: 273px;
+  min-height: 319px;
+  margin: 104px auto;
+  background: white;
+  padding: 16px;
+}
+
+.settings__body {
+  margin-top: 16px;
+}
+
+.settings__clauses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+}
+
+.settings__input {
+  max-width: 207px;
+  min-width: 207px;
+}
+
+.settings__input input {
+  min-width: 200px;
+}
+
+.window__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.window__closebtn {
+  margin-top: 3px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.window__closebtn span {
+  display: block;
+  margin-top: 6px;
+  width: 13px;
+  height: 1px;
+  background: #000;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.window__closebtn span::after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 1px;
+  background: #000;
+  margin-bottom: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.autorization__body {
+  margin-top: 70px;
+}
+
+.autorization__inputemail {
+  margin-top: 7px;
+}
+
+.autorization__inputemail input {
+  width: 242px;
+  height: 32px;
+  border: 1px solid #000;
+}
+
+.autorization__btn {
+  margin-top: 7px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.autorization__btn span {
+  display: block;
+  padding: 8px;
+  color: #000;
+}
+
+#haveToken {
+  display: block;
+  max-width: 140px;
+  margin: 50px auto;
+  color: #000;
+}
+
+#haveToken:hover {
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+}
+
+.verification__body {
+  margin-top: 70px;
+}
+
+.verification__error {
+  color: red;
+}
+
+.verification__inputpassword {
+  margin-top: 7px;
+}
+
+.verification__inputpassword input {
+  width: 245px;
+  height: 32px;
+  border: 1px solid #000;
+}
+
+.verification__btn {
+  margin-top: 7px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.verification__btn span {
+  display: block;
+  padding: 8px;
+  color: #000;
+}
