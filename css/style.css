@@ -244,10 +244,6 @@ body {
   background-color: #535353;
 }
 
-.chat__settings {
-  display: none;
-}
-
 .chat__body {
   max-width: 273px;
   min-height: 319px;
@@ -260,7 +256,7 @@ body {
   margin-top: 16px;
 }
 
-.settings__clauses {
+.settings__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,13 +266,19 @@ body {
   margin-top: 8px;
 }
 
-.settings__input {
-  max-width: 207px;
-  min-width: 207px;
+.settings__name-change {
+  width: 207px;
+  height: 32px;
+  padding: 0 5px;
+  border: 1px solid #000;
 }
 
-.settings__input input {
-  min-width: 200px;
+.settings__submit-button {
+  width: 30px;
+  height: 32px;
+  border: 1px solid #000;
+  background: url("../img/btn_arrow2.png") center no-repeat;
+  background-size: 15px;
 }
 
 .window__header {
@@ -320,26 +322,23 @@ body {
   margin-top: 70px;
 }
 
-.autorization__inputemail {
+.autorization__email-input {
+  font-size: 16px;
+  padding: 0 5px;
   margin-top: 7px;
-}
-
-.autorization__inputemail input {
   width: 242px;
   height: 32px;
   border: 1px solid #000;
 }
 
-.autorization__btn {
+.autorization__submit-button {
+  width: 120px;
+  height: 34px;
   margin-top: 7px;
   display: inline-block;
   border: 1px solid #000;
-}
-
-.autorization__btn span {
-  display: block;
-  padding: 8px;
-  color: #000;
+  background: white;
+  cursor: pointer;
 }
 
 #haveToken {
@@ -362,24 +361,20 @@ body {
   color: red;
 }
 
-.verification__inputpassword {
+.verification__token-input {
+  font-size: 16px;
+  padding: 0 5px;
   margin-top: 7px;
-}
-
-.verification__inputpassword input {
   width: 245px;
   height: 32px;
   border: 1px solid #000;
 }
 
-.verification__btn {
+.verification__submit-button {
+  width: 62px;
+  height: 33px;
   margin-top: 7px;
   display: inline-block;
   border: 1px solid #000;
-}
-
-.verification__btn span {
-  display: block;
-  padding: 8px;
-  color: #000;
+  background: white;
 }

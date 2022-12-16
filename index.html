@@ -14,10 +14,10 @@
 			<div class="container">
 				<div class="chat__buttons">
 					<div class="buttons__settings btn">
-						<a href="#" id="settingsBtn"><span>Настройки</span></a>
+						<a href="#" id="settingsOpenButton"><span>Настройки</span></a>
 					</div>
 					<div class="buttons__exit btn">
-						<a href="#" id="exitBtn"><span>Выйти</span></a>
+						<a href="#" id="autorizationOpenButton" data-condition = ""><span>Вoйти</span></a>
 					</div>
 				</div>
 				<div id="chatDisplay" class="chat__display">
@@ -35,50 +35,7 @@
 						</span></a>
 				</div>
 			</div>
-<div class="chat__settings chat__popups">
-	<div class="chat__body">
-		<div class="settings__window">
-			<div class="window__header">
-				<div class="window__title">Настройки</div>
-				<a class="window__closebtn"><span></span></a>
-			</div>
-			<div class="settings__body">
-				<p class="settings__title">Имя в чате</p>
-				<div class="settings__clauses">
-					<div class="submit__input settings__input">
-						<input type="text" class="inputName">
-					</div>
-					<a class="settings__btn submit__btn" href="#"><span>
-						<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M4.10156 4.75781H0.289062V3.57812H4.10156V4.75781ZM10.6328 3.92188L5.46875 1.89844V0.414062L12.1406 3.36719V4.50781L5.46875 7.46875V5.96875L10.6328 3.92188Z" fill="black"/>
-						</svg>
-					</span></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div><div class="chat__authorization chat__popups">
-	<div class="chat__body">
-		<div class="autorization__window">
-			<div class="window__header">
-				<div class="window__title">Авторизация</div>
-				<a class="window__closebtn"><span></span></a>
-			</div>
-			<div class="autorization__body">
-				<p class="autorization__title">Почта:</p>
-				<div class="autorization__inputemail">
-					<div class="email__input">
-						<input type="email" class="inputemail" value="">
-					</div>
-					<a class="autorization__btn" href="#"><span>
-							Получить код
-						</span></a>
-				</div>
-			</div>
-			<a href="#" id="haveToken">У меня есть код</a>
-		</div>
-	</div>
-</div><div class="chat__verification chat__popups">
+<div class="verification__window chat__popups">
 	<div class="chat__body">
 		<div class="verification__window">
 			<div class="window__header">
@@ -87,15 +44,46 @@
 			</div>
 			<div class="verification__body">
 				<p class="verification__title">Код:</p>
-				<div class="verification__inputpassword">
-					<div class="code__input">
-						<input type="text" class="inputTokenArea">
-					</div>
-					<a class="verification__btn" href="#"><span>
-						Войти
-					</span></a>
+				<form name="verification"class="verification__inputs">
+					<input type="text" class="verification__token-input" value="" placeholder="Введите токен из почты">
+					<input type="submit" class="verification__submit-button" value="Войти">
+				</form>
+			</div>
+		</div>
+	</div>
+</div><div class="settings__window chat__popups">
+	<div class="chat__body">
+		<div class="settings__window">
+			<div class="window__header">
+				<div class="window__title">Настройки</div>
+				<a class="window__closebtn"><span></span></a>
+			</div>
+			<div class="settings__body">
+				<div class="settings__items">
+					<p class="settings__title">Имя в чате</p>
+					<form name="settings" class="settings__item">
+						<input type="text" class="settings__name-change" value="" placeholder="Введите токен из почты">
+						<input type="submit" class="settings__submit-button" value="">
+					</form>
 				</div>
 			</div>
+		</div>
+	</div>
+</div><div class="autorization__window chat__popups">
+	<div class="chat__body">
+		<div class="autorization__window">
+			<div class="window__header">
+				<div class="window__title">Авторизация</div>
+				<a class="window__closebtn"><span></span></a>
+			</div>
+			<div class="autorization__body">
+				<p class="autorization__title">Почта:</p>
+				<form name="autorization" class="autorization__inputs">
+					<input type="email" class="autorization__email-input" value="">
+					<input type="submit" class="autorization__submit-button" value="Получить код">
+				</form>
+			</div>
+			<a href="#" id="haveToken">У меня есть код</a>
 		</div>
 	</div>
 </div>		</div>
@@ -108,8 +96,8 @@
 			</div>
 		</div>
 	</template>
-	<script type="module" src="./js/main.js"></script>
-	<script type="module" src="./js/verification.js"></script>
+	<!-- <script type="module" src="/js/main.js"></script> -->
+	<script type="module" src="/js/UI.js"></script>
 </body>
 
 </html>
